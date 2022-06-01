@@ -50,7 +50,8 @@ export default function Introduce () {
                     ))}
                 </KyaTags>
                 <IntroduceInnerText>
-                    I'm Computer Software undergraduate student at Hanyang University. <br />
+                    Developer who enjoys being focused
+                    {/*I'm Computer Software undergraduate student at Hanyang University. <br />*/}
                     {/*Now, I worked as a Backend Engineer at EmoticBox. <br />*/}
                 </IntroduceInnerText>
             </IntroduceText>
