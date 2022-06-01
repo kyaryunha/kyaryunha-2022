@@ -7,7 +7,7 @@ export const CvBackgroundStyle = styled.div`
   color: black;
 `;
 export const CVBackgroundInnerStyle = styled.div`
-  padding: 50px;
+  padding: 0 15px;
   ${MediaQueries[0]} {
     width: 1080px;
     margin: auto;
@@ -69,7 +69,7 @@ export const CVList = styled.ul`
 export const CVDateStyle = styled.span`
   color: gray;
   font-size: 110%;
-  margin: 0 1vw 0 0;
+  margin: 0 5px 0 0;
 `;
 
 export const CVContent = styled.div`
