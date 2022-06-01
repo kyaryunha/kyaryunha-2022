@@ -7,11 +7,8 @@ export default function Overview () {
             Projects
         </OverviewStyledTitle>
         <OverviewText>
-            <ErrorMessage>
-                It will be updated later. <br />
-            </ErrorMessage>
-            Only personal projects are listed. <br/>
-            Company projects are not listed.
+            Company projects are not listed. <br/>
+            Only personal projects are listed.
         </OverviewText>
     </OverviewCover>
 }

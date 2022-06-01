@@ -28,6 +28,6 @@ export const KyaTags = styled.div`
 `;
 
 export const KyaA = styled.a`
-  color: ${props => props.color}
+  color: ${props => props.color?props.color:'black'}
 `;
 
