@@ -1,6 +1,7 @@
-import { StyledHeader } from '../../styles/Layout.style';
+import {StyledHeader, StyledHeaderInner, StyledMenuItem} from '../../styles/Layout.style';
 import {createContext, useMemo, useReducer} from "react";
 import Menu from "./Menu";
+import Link from "next/link";
 
 export const HamburgerContext = createContext({
     dispatch: () => {},
@@ -38,14 +39,18 @@ const Header = ({headerInterval}) => {
         menuOpen, dispatch
     }),[menuOpen]);
     return <StyledHeader headerInterval={headerInterval}>
-        <div>
-            <img src='/logo.png' alt='logo'/>
-        </div>
-        <>
+        <StyledHeaderInner>
+            <div>
+                <Link href='/' >
+                    <a target='_self'>
+                        <img src='/logo.png' alt='logo'/>
+                    </a>
+                </Link>
+            </div>
             <HamburgerContext.Provider value={value}>
                 <Menu />
             </HamburgerContext.Provider>
-        </>
+        </StyledHeaderInner>
     </StyledHeader>
 };
 

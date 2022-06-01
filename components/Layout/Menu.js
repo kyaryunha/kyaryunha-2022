@@ -13,17 +13,13 @@ import {
 const Menu = () => {
     const menuItems = [
         {
-            content: 'CV',
+            content: 'Home',
             url: '/',
         },
         // {
-        //     content: 'CV',
-        //     url: '/cv',
+        //     content: 'Project',
+        //     url: '/projects',
         // },
-        {
-            content: 'Project',
-            url: '/projects',
-        },
         {
             content: <IconGithub />,
             url: 'https://github.com/kyaryunha',

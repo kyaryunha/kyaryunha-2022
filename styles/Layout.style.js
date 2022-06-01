@@ -18,48 +18,26 @@ export const StyledHeader = styled.header`
     position: 'absolute',
     width: '100%',
   }}
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
   z-index: 100;
   background-color: #555;
+`;
+
+export const StyledHeaderInner = styled.div`
+  display: flex;
+  justify-content: space-between;
   color: white;
   a {
     color: white;
     text-decoration: none;
   }
   ${MediaQueries[0]} {
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0;
     a {
       display: inline-flex;
     }
-  }
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-2%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes shrink {
-    0% {
-      width: 95%;
-    }
-    100% {
-      width: 90%;
-    }
+    width: 1080px;
+    margin: auto;
   }
 `;
 
