@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {useCallback, useContext} from "react";
-import {HAMBURGER, HamburgerContext} from "./Header";
+import {HAMBURGER, HamburgerContext} from "../../contexts/Hamburger.context";
 import {StyledMenuItem} from "../../styles/Layout.style";
 
 const MenuItem = ({contents}) => {

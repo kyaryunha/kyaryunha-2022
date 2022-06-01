@@ -1,16 +1,12 @@
 import {
   CVBackground,
   CVContent,
-  CVDate,
   CVList,
-  CVMetas,
-  CVSubTitle,
-  CVSubTitleCover,
   CVTitle,
-  KyaA
 } from "../../styles/Cv.style";
 import {IconLink} from "../../icons/util.icon";
 import {kyaColor} from "../../styles/Layout.style";
+import {KyaA} from "../../styles/Page.style";
 
 export default function Contact() {
   return (

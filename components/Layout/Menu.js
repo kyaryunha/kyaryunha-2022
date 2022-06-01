@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import {IconGithub, IconTwitter} from "../../icons/sns.icon";
-import {HAMBURGER, HamburgerContext} from "./Header";
+import {HAMBURGER, HamburgerContext} from "../../contexts/Hamburger.context";
 import MenuItem from "./MenuItem";
 import {IconHamburger} from "../../icons/util.icon";
 import {
@@ -13,13 +13,13 @@ import {
 const Menu = () => {
     const menuItems = [
         {
-            content: 'Home',
+            content: 'CV',
             url: '/',
         },
-        // {
-        //     content: 'Project',
-        //     url: '/projects',
-        // },
+        {
+            content: 'Project',
+            url: '/projects',
+        },
         {
             content: <IconGithub />,
             url: 'https://github.com/kyaryunha',

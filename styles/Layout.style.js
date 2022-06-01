@@ -30,7 +30,7 @@ export const StyledHeaderInner = styled.div`
     color: white;
     text-decoration: none;
   }
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     justify-content: space-between;
     padding-left: 0;
     a {
@@ -43,14 +43,14 @@ export const StyledHeaderInner = styled.div`
 
 export const StyledMenuItemsNoHamburger = styled.div`
   display: none;
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: inline-flex;
   }
 `;
 
 export const StyledMenuItemsHamburger = styled.div`
   display: inline-flex;
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: none;
   }
 `;
@@ -93,7 +93,7 @@ export const StyledMenuItem = styled.div`
     width: 25px;
   }
   // 아닐 때 
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: inline-flex;
     align-items: center;
     margin: 0 20px;

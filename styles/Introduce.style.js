@@ -4,7 +4,7 @@ import {MediaQueries} from "./MediaQueries";
 export const IntroduceCover = styled.div`
   margin: 0;
   padding: 40px 0 0 0;
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -15,7 +15,7 @@ export const IntroduceText = styled.div`
   display: block;
   width: 100%;
   font-size: 120%;
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: inline-block;
     width: 80%;
   }
@@ -35,7 +35,7 @@ export const IntroduceInnerText = styled.div`
 export const IntroduceImgCover = styled.div`
   display: block;
   width: min(100%, 200px);
-  ${MediaQueries[0]} {
+  ${MediaQueries[1]} {
     display: inline-block;
     width: 20%;
   }

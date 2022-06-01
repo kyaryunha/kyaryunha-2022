@@ -2,18 +2,11 @@ import {StyledHeader, StyledHeaderInner, StyledMenuItem} from '../../styles/Layo
 import {createContext, useMemo, useReducer} from "react";
 import Menu from "./Menu";
 import Link from "next/link";
-
-export const HamburgerContext = createContext({
-    dispatch: () => {},
-});
+import {HAMBURGER, HamburgerContext} from "../../contexts/Hamburger.context";
 
 const initialState = {
     menuOpen: false,
 }
-export const HAMBURGER = {
-    CLICK_MENU: 'CLICK_MENU',
-    CLICK_OFF: 'CLICK_OFF',
-};
 
 const reducer = (state, action) => {
     switch (action.type) {
