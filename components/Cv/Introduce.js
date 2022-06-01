@@ -18,7 +18,6 @@ export default function Introduce () {
         const windowWidth = window.innerWidth;
         for (let breakpointIdx=0; breakpointIdx<BREAKPOINTS.length; breakpointIdx++) {
             if (windowWidth < BREAKPOINTS[breakpointIdx]) {
-                console.log(windowWidth, breakpointIdx);
                 setMediaQueries(breakpointIdx);
                 return;
             }
