@@ -1,37 +1,7 @@
 import styled from '@emotion/styled'
 import {kyaColor} from "./Layout.style";
+import {KyaTag} from "./Page.style";
 import {MediaQueries} from "./MediaQueries";
-
-export const CvBackgroundStyle = styled.div`
-  background-color: white;
-  color: black;
-`;
-export const CVBackgroundInnerStyle = styled.div`
-  padding: 0 15px;
-  ${MediaQueries[0]} {
-    width: 1080px;
-    margin: auto;
-    padding: 0;
-  }
-`;
-
-export const KyaTag = styled.span`
-  color: white;
-  background-color: ${props => props.backgroundColor};
-  padding: 5px 8px;
-  margin: 0 8px 0 0;
-  border: none;
-  border-radius: 12px;
-  height: 15px;
-`;
-
-export const KyaTags = styled.div`
-`;
-
-export const KyaA = styled.a`
-  color: ${props => props.color}
-`;
-
 
 export const CVBackground = styled.div`
 `;
@@ -44,12 +14,19 @@ export const CVTitle = styled.div`
 `;
 
 export const CVSubTitleCover = styled.div`
-  display: flex;
-  justify-content: space-between;
+  line-height: 200%;
+  ${MediaQueries[0]} {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
-export const CVSubTitleStyle = styled.span`
+export const CVSubTitleStyle = styled.div`
+  display: block;
   font-size: 110%;
   margin-right: 10px;
+  ${MediaQueries[0]} {
+    display: inline-block;
+  }
 `;
 
 export const CVList = styled.ul`
@@ -79,7 +56,12 @@ export const CVContent = styled.div`
   margin-bottom: 25px;
 `;
 
-export const CVRoleDateStyle = styled.span``;
+export const CVRoleDateStyle = styled.div`
+  display: block;
+  ${MediaQueries[0]} {
+    display: inline-block;
+  }
+`;
 export const CVSubTitle = ({text}) => {
     return <CVSubTitleStyle>{text}</CVSubTitleStyle>
 }

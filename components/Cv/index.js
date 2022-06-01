@@ -4,22 +4,21 @@ import SchoolActivity from './SchoolActivity'
 import Presentation from './Presentation'
 import Contact from './Contact'
 import Award from './Award'
-import {MediaQueries} from "../../styles/MediaQueries";
-import {CVBackgroundInnerStyle, CvBackgroundStyle} from "../../styles/Cv.style";
 import Introduce from "./Introduce";
+import {PageBackgroundInnerStyle, PageBackgroundStyle} from "../../styles/Page.style";
 
 export default function Cv () {
   return (
-    <CvBackgroundStyle>
-        <CVBackgroundInnerStyle>
+    <PageBackgroundStyle>
+        <PageBackgroundInnerStyle>
             <Introduce />
             <Award />
             <WorkExperience />
             <SchoolActivity />
             <Presentation />
             <Contact />
-        </CVBackgroundInnerStyle>
-    </CvBackgroundStyle>
+        </PageBackgroundInnerStyle>
+    </PageBackgroundStyle>
   )
 }
 

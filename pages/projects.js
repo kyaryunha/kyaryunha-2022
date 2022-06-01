@@ -1,8 +1,9 @@
 import Layout from '../components/Layout';
-const Projects = () => (
+import Projects from "../components/Projects";
+const ProjectsPages = () => (
     <Layout subtitle={'Project'}>
-        Project is will be update.
+        <Projects />
     </Layout>
 );
 
-export default Projects;
+export default ProjectsPages;

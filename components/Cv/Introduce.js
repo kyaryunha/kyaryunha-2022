@@ -1,5 +1,5 @@
 import {kyaColor} from "../../styles/Layout.style";
-import {KyaTag, KyaTags} from "../../styles/Cv.style";
+import {KyaTag, KyaTags} from "../../styles/Page.style";
 import {
     IntroduceCover, IntroduceImage,
     IntroduceImgCover,
@@ -7,59 +7,38 @@ import {
     IntroduceText,
     IntroduceTitle
 } from "../../styles/Introduce.style";
-import {useEffect, useState} from "react";
-import {BREAKPOINTS} from "../../styles/MediaQueries";
+import {useContext, useMemo} from "react";
+import {MediaQueriesContext} from "../../contexts/MediaQueries.context";
 
 export default function Introduce () {
-    const isClient = typeof window === 'object';
-    // const [windowWidth, setWindowWidth] = useState(isClient ? window.innerWidth : undefined);
-    const [mediaQueries, setMediaQueries] = useState(0);
-    const handleResize = () => {
-        const windowWidth = window.innerWidth;
-        for (let breakpointIdx=0; breakpointIdx<BREAKPOINTS.length; breakpointIdx++) {
-            if (windowWidth < BREAKPOINTS[breakpointIdx]) {
-                setMediaQueries(breakpointIdx);
-                return;
-            }
+    const { mediaQueries } = useContext(MediaQueriesContext);
+    return <IntroduceCover>
+        {
+            mediaQueries<=1 && <IntroduceImgCover>
+                <IntroduceImage src="me.jpg" alt="my picture" />
+            </IntroduceImgCover>
         }
-        setMediaQueries(BREAKPOINTS.length);
-    }
-    useEffect(() => {
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return (
-        <IntroduceCover>
-            {
-                mediaQueries===0 && <IntroduceImgCover>
-                    <IntroduceImage src="me.jpg" alt="my picture" />
-                </IntroduceImgCover>
-            }
-            <IntroduceText>
-                <IntroduceTitle>
-                    Shin Hyun (신 현)
-                </IntroduceTitle>
-                <KyaTags>
-                    {['Algorithm', 'FrontEnd', 'BackEnd'].map((name) => (
-                        <KyaTag backgroundColor={kyaColor.yellow} key={name}>
-                            {name}
-                        </KyaTag>
-                    ))}
-                </KyaTags>
-                <IntroduceInnerText>
-                    Developer who enjoys being focused
-                    {/*I'm Computer Software undergraduate student at Hanyang University. <br />*/}
-                    {/*Now, I worked as a Backend Engineer at EmoticBox. <br />*/}
-                </IntroduceInnerText>
-            </IntroduceText>
-            {
-                mediaQueries>0 && <IntroduceImgCover>
-                    <IntroduceImage src="me.jpg" alt="my picture" />
-                </IntroduceImgCover>
-            }
-
-        </IntroduceCover>
-    )
+        <IntroduceText>
+            <IntroduceTitle>
+                Shin Hyun (신 현)
+            </IntroduceTitle>
+            <KyaTags>
+                {['Algorithm', 'FrontEnd', 'BackEnd'].map((name) => (
+                    <KyaTag backgroundColor={kyaColor.yellow} key={name}>
+                        {name}
+                    </KyaTag>
+                ))}
+            </KyaTags>
+            <IntroduceInnerText>
+                Developer who enjoys being focused
+                {/*I'm Computer Software undergraduate student at Hanyang University. <br />*/}
+                {/*Now, I worked as a Backend Engineer at EmoticBox. <br />*/}
+            </IntroduceInnerText>
+        </IntroduceText>
+        {
+            mediaQueries>1 && <IntroduceImgCover>
+                <IntroduceImage src="me.jpg" alt="my picture" />
+            </IntroduceImgCover>
+        }
+    </IntroduceCover>
 }
