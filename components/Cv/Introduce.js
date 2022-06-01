@@ -7,7 +7,7 @@ import {
     IntroduceText,
     IntroduceTitle
 } from "../../styles/Introduce.style";
-import {useContext, useMemo} from "react";
+import {useContext} from "react";
 import {MediaQueriesContext} from "../../contexts/MediaQueries.context";
 
 export default function Introduce () {

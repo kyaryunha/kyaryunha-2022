@@ -10,7 +10,6 @@ const initialState = {
 }
 
 const reducer = (state, action) => {
-    console.log(action.value);
     switch (action.type) {
         case MEDIA_QUERIES.WINDOW_RESIZE:
             return {
