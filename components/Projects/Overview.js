@@ -8,7 +8,7 @@ export default function Overview () {
         </OverviewStyledTitle>
         <OverviewText>
             Company projects are not listed. <br/>
-            Only personal projects are listed.
+            Only personal/team projects are listed.
         </OverviewText>
     </OverviewCover>
 }

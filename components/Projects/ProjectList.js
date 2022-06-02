@@ -38,5 +38,33 @@ export default function ProjectList () {
             contents='(☆10) LaTeX document design'
             url='https://github.com/kyaryunha/tex-design-three-slash'
         />
+        <ProjectListItem
+            date='2019'
+            title='SW Maestro 10th'
+            coverImageUrl='/projects/swmaestro.jpg'
+            contents='(Team Project) Interactive digital media content for pets using Beam projector and Jetson Nano'
+            url={false}
+        />
+        <ProjectListItem
+            date='2019'
+            title='Solve Image Puzzle'
+            coverImageUrl='/projects/solveimagepuzzle.jpg'
+            contents='(Team Project) project for practicing OpenCV'
+            url='https://github.com/kyaryunha/Solve-Image-Puzzle-by-Human-Intelligence'
+        />
+        <ProjectListItem
+            date='2018'
+            title='Christmas Tree'
+            coverImageUrl='/projects/christmasMST.PNG'
+            contents='project for practicing html, css, js, canvas'
+            url={false}
+        />
+        <ProjectListItem
+            date='2018'
+            title='Draw Graph'
+            coverImageUrl='/projects/drawgraph.PNG'
+            contents='project for practicing html, css, js, canvas'
+            url={false}
+        />
     </StyledProjectList>
 }
