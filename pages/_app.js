@@ -5,6 +5,8 @@ import {useEffect, useMemo, useReducer, useState} from "react";
 import {BREAKPOINTS} from "../styles/MediaQueries";
 import {MEDIA_QUERIES, MediaQueriesContext} from "../contexts/MediaQueries.context";
 import {StyledFooter} from "../styles/Page.style";
+import {useRouter} from "next/router";
+import * as gtag from "../lib/gtag";
 
 const initialState = {
     mediaQueries: 0,
@@ -49,6 +51,18 @@ const App = ({ Component, pageProps }) => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    const router = useRouter()
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            gtag.pageview(url)
+        }
+        router.events.on('routeChangeComplete', handleRouteChange)
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange)
+        }
+    }, [router.events])
+
     return <>
         <Head>
             <meta charSet="utf-8"/>
