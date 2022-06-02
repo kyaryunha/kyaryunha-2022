@@ -9,6 +9,7 @@ export const StyledSkillListItem = styled.div`
   padding: 20px;
   box-shadow: 0 10px 20px 0 hsla(0,0%,39%,.2);
   border-radius: 15px;
+  margin-bottom: 25px;
 `;
 
 export const StyledSkillFieldName = styled.div`
