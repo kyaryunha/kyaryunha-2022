@@ -31,3 +31,10 @@ export const KyaA = styled.a`
   color: ${props => props.color?props.color:'black'}
 `;
 
+export const StyledFooter = styled.footer`
+  margin: 30px;
+  ${MediaQueries[1]} {
+    width: 1080px;
+    margin: 30px auto;
+  }
+`;

@@ -4,6 +4,7 @@ import { WebTitle } from '../components/CONSTANTS';
 import {useEffect, useMemo, useReducer, useState} from "react";
 import {BREAKPOINTS} from "../styles/MediaQueries";
 import {MEDIA_QUERIES, MediaQueriesContext} from "../contexts/MediaQueries.context";
+import {StyledFooter} from "../styles/Page.style";
 
 const initialState = {
     mediaQueries: 0,
@@ -80,6 +81,9 @@ const App = ({ Component, pageProps }) => {
         />
         <MediaQueriesContext.Provider value={value}>
             <Component {...pageProps} />
+            <StyledFooter>
+                @ Shin Hyun
+            </StyledFooter>
         </MediaQueriesContext.Provider>
     </>
 };

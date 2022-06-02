@@ -21,6 +21,10 @@ const Menu = () => {
             url: '/projects',
         },
         {
+            content: 'Skill',
+            url: '/skills',
+        },
+        {
             content: <IconGithub />,
             url: 'https://github.com/kyaryunha',
             target: '_blank',
