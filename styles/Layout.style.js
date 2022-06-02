@@ -73,6 +73,7 @@ export const StyledMenuTitle = styled.div`
 export const StyledMenuOpen = styled.div`
   position: fixed;
   display: block;
+  z-index: 200;
   width: 100%;
   height: 100vh;
   top: 0; 
