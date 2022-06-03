@@ -20,6 +20,9 @@ export const StyledHeader = styled.header`
   }}
   z-index: 100;
   background-color: #555;
+  @media print {
+    display: none;
+  }
 `;
 
 export const StyledHeaderInner = styled.div`

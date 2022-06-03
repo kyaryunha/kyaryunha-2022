@@ -12,6 +12,9 @@ export const IconHamburger = styled(Menu)`
 export const IconLink = styled(Link)`
     color: kyaColor.yellow;
     height: 15px;
+  @media print {
+    display: none;
+  }
 `;
 
 export const IconBuilding = styled(Buildings)`
@@ -19,12 +22,14 @@ export const IconBuilding = styled(Buildings)`
   color: white;
   background-color: rgba(0, 0, 255, 0.5);
   border-radius: 3px;
+  margin-left: 3px;
 `;
 export const IconPeopleFill = styled(PeopleFill)`
   width: 20px;
   color: white;
   background-color: rgba(0, 255, 0, 0.5);
   border-radius: 3px;
+  margin-left: 3px;
 `;
 
 export const IconPencil = styled(Pencil)`
@@ -32,9 +37,9 @@ export const IconPencil = styled(Pencil)`
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
+  margin-left: 3px;
 `;
 export const IconSkill = ({type}) => {
-    console.log(type)
     if(type==='company') return <IconBuilding />
     else if(type==='team') return <IconPeopleFill />
     else if(type==='personal') return <IconPencil />
