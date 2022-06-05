@@ -1,4 +1,4 @@
-import {StyledHeader, StyledHeaderInner, StyledMenuItem} from '../../styles/Layout.style';
+import {StyledHeader, StyledHeaderInner, StyledHeaderTitle, StyledMenuItem} from '../../styles/Layout.style';
 import {createContext, useMemo, useReducer} from "react";
 import Menu from "./Menu";
 import Link from "next/link";
@@ -36,7 +36,8 @@ const Header = ({headerInterval}) => {
             <div>
                 <Link href='/' >
                     <a target='_self'>
-                        <img src='/logo.png' alt='logo'/>
+                        <StyledHeaderTitle>S.Hyun</StyledHeaderTitle>
+                        {/*<img src='/logo.png' alt='logo'/>*/}
                     </a>
                 </Link>
             </div>

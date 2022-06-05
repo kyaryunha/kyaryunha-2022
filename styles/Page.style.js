@@ -28,7 +28,10 @@ export const KyaTags = styled.div`
 `;
 
 export const KyaA = styled.a`
-  color: ${props => props.color?props.color:'black'}
+  color: ${props => props.color?props.color:'black'};
+  @media print {
+    text-decoration: none;
+  }
 `;
 
 export const StyledFooter = styled.footer`
@@ -36,5 +39,8 @@ export const StyledFooter = styled.footer`
   ${MediaQueries[1]} {
     width: 1080px;
     margin: 30px auto;
+  }
+  @media print {
+    display: none;
   }
 `;

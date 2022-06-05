@@ -39,6 +39,9 @@ export const IntroduceImgCover = styled.div`
     display: inline-block;
     width: 20%;
   }
+  @media print {
+    display: none;
+  }
 `;
 export const IntroduceImage = styled.img`
   width: 100%;
