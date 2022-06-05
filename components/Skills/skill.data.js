@@ -49,7 +49,7 @@ export const FRONT_END = {
         name: 'React',
         contents: [
             {
-                content: "상단의 HTML, CSS, JS 항목에 적혀있는 작업은 Nextjs 로도 해본 적 있습니다"
+                content: "상단의 HTML, CSS, JS 항목에 적혀있는 작업은 Nextjs 로도 할 수 있습니다"
             },
             {
                 content: "Nextjs, SWR, Emotion 로 개발을 해본 적 있습니다",

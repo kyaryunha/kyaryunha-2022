@@ -6,9 +6,9 @@ export const ErrorMessage = styled.span`
   font-weight: bold;
 `;
 export const kyaColor = {
-  yellow: (props) => `rgba(255, 200, 0, ${props.opacity?props.opacity:1.0})`,
-  gray: (props) => `rgba(50, 60, 70, ${props.opacity?props.opacity:1.0})`,
-  white: (props) => `rgba(255, 255, 255, ${props.opacity?props.opacity:1.0})`,
+  yellow: ({opacity}) => `rgba(255, 200, 0, ${opacity?opacity:1.0})`,
+  gray: ({opacity}) => `rgba(50, 60, 70, ${opacity?opacity:1.0})`,
+  white: ({opacity}) => `rgba(255, 255, 255, ${opacity?opacity:1.0})`,
 };
 
 

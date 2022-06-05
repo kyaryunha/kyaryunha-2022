@@ -6,7 +6,7 @@ import {BREAKPOINTS} from "../styles/MediaQueries";
 import {MEDIA_QUERIES, MediaQueriesContext} from "../contexts/MediaQueries.context";
 import {StyledFooter} from "../styles/Page.style";
 import {useRouter} from "next/router";
-import * as gtag from "../lib/gtag";
+import * as gtag from "../libs/gtag";
 
 const initialState = {
     mediaQueries: 0,
