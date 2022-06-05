@@ -1,22 +1,30 @@
 export const FRONT_END = {
     name: "Front End",
+    ALL: {
+        name: '',
+        contents: [
+            {
+                content: "프론트엔드는 상상한 것을 구체화하여 구현합니다.",
+            },
+        ]
+    },
     HTML_CSS_JS: {
         name: "HTML, (S)CSS, Javascript",
         contents: [
             {
-                content: "Media Query 를 이용해 반응형 웹을 개발 해본적 있습니다",
+                content: "Media Query 를 이용해 반응형 웹을 개발 해본 적 있습니다",
                 types: ["personal", "company"]
             },
             {
-                content: "Javascript 로 다양한 인터랙티브한 작업을 개발 할 수 있습니다",
+                content: "Javascript 로 다양한 인터랙티브한 작업을 개발 해본 적 있습니다",
                 types: ["personal", "company"]
             },
             {
-                content: "벡엔드에 REST API 로 데이터 요청을 해 개발을 해본적 있습니다",
+                content: "벡엔드에 REST API 로 데이터 요청을 해 개발을 해본 적 있습니다",
                 types: ["company"]
             },
             {
-                content: "PSD 디자인 시안을 받아, 마크업 해본적 있습니다",
+                content: "PSD 디자인 시안을 받아, 마크업 해본 적 있습니다",
                 types: ["company"]
             },
             {
@@ -24,7 +32,7 @@ export const FRONT_END = {
                 types: ["personal", "company"]
             },
             {
-                content: "브라우저 호환성을 고민해 개발을 해본적 있습니다",
+                content: "브라우저 호환성을 고민해 개발을 해본 적 있습니다",
                 types: ["personal", "company"]
             },
             {
@@ -41,10 +49,10 @@ export const FRONT_END = {
         name: 'React',
         contents: [
             {
-                content: "상단의 HTML, CSS, JS 항목에 적혀있는 작업은 Nextjs 로도 할 수 있습니다"
+                content: "상단의 HTML, CSS, JS 항목에 적혀있는 작업은 Nextjs 로도 해본 적 있습니다"
             },
             {
-                content: "Nextjs, SWR, Emotion 로 개발을 해본적 있습니다",
+                content: "Nextjs, SWR, Emotion 로 개발을 해본 적 있습니다",
                 types: ["personal", "company"]
             },
             {
@@ -57,7 +65,7 @@ export const FRONT_END = {
         name: 'Canvas',
         contents: [
             {
-                content: "마우스 클릭, 우클릭을 통해, 데이터를 그리거나 수정하거나 삭제하거나 하이라이트하는 사이트를 만든 적 있습니다",
+                content: "마우스 클릭 및 우클릭을 통해, 데이터를 그리거나 수정하거나 삭제하거나 하이라이트하는 사이트를 만든 적 있습니다",
                 types: ["personal", "company"]
             },
             {
@@ -65,11 +73,11 @@ export const FRONT_END = {
                 types: ["company"]
             },
             {
-                content: "Canvas 의 최대 픽셀이 제한되어 있는 문제를 접해, 여러 Canvas 를 이어붙여 하나의 Canvas 처럼 작동하게 하여 해결해본적 있습니다",
+                content: "Canvas 의 최대 픽셀이 제한되어 있는 문제를 접해, 여러 Canvas 를 이어붙여 하나의 Canvas 처럼 작동하게 하여 해결해본 적 있습니다",
                 types: ["company"]
             },
             {
-                content: "API 를 통해 가져온 데이터를 chartjs 를 이용해 시각화를 해본적 있습니다",
+                content: "API 를 통해 가져온 데이터를 chartjs 를 이용해 시각화를 해본 적 있습니다",
                 types: ["company"]
             }
         ]
@@ -90,7 +98,7 @@ export const FRONT_END = {
                 types: ["personal"]
             },
             {
-                content: "Github Pages 를 이용해 배포를 해본적 있습니다",
+                content: "Github Pages 를 이용해 배포를 해본 적 있습니다",
                 types: ["personal"]
             },
             {
@@ -98,7 +106,7 @@ export const FRONT_END = {
                 types: ["personal", "company"]
             },
             {
-                content: "AWS (Code Pipeline, Code Build, ECS, ECR, ...) 으로 배포를 해본적 있습니다",
+                content: "AWS (Code Pipeline, Code Build, ECS, ECR, ...) 으로 배포를 해본 적 있습니다",
                 types: ["company"]
             },
         ]
@@ -107,11 +115,11 @@ export const FRONT_END = {
         name: 'Others',
         contents: [
             {
-                content: "jekyll template 를 이용해, 필요에 맞게 커스터마이즈 한적 있습니다 ",
+                content: "jekyll template 를 이용해, 필요에 맞게 커스터마이즈 한 적 있습니다 ",
                 types: ["team"]
             },
             {
-                content: "Socket.IO 를 사용해 실시간 채팅 기능을 만든적 있습니다",
+                content: "Socket.IO 를 사용해 실시간 채팅 기능을 만든 적 있습니다",
                 types: ["personal", "company"]
             },
             {
@@ -156,7 +164,7 @@ export const BACK_END = {
                 types: ["personal", "company"],
             },
             {
-                content: "Sequelize 를 이용해 MySQL, MongoDB 를 사용해본적 있습니다",
+                content: "Sequelize 를 이용해 MySQL, MongoDB 를 사용해본 적 있습니다",
                 types: ["personal", "company"],
             },
             {
@@ -164,7 +172,7 @@ export const BACK_END = {
                 types: ["company"],
             },
             {
-                content: "Sequelize 를 이용해 table, column 을 추가하거나 제거하는 migration 을 해본적 있습니다",
+                content: "Sequelize 를 이용해 table, column 을 추가하거나 제거하는 migration 을 해본 적 있습니다",
                 types: ["company"],
             },
             {
@@ -172,7 +180,7 @@ export const BACK_END = {
                 types: ["company"],
             },
             {
-                content: "mocha, jest, supertest 를 이용해 테스트 코드를 작성 할 수 있습니다",
+                content: "mocha, jest, supertest 를 이용해 테스트 코드를 작성 해본 적 있습니다",
                 types: ["personal", "company"],
             },
             {
@@ -185,15 +193,15 @@ export const BACK_END = {
         name: 'Flask',
         contents: [
             {
-                content: "session 을 이용해 auth 기능을 구현 해본적 있습니다",
+                content: "session 을 이용해 auth 기능을 구현 해본 적 있습니다",
                 types: ["company"],
             },
             {
-                content: "boto3 를 이용해 s3에서 데이터를 가져오거나 업로드를 해본적 있습니다",
+                content: "boto3 를 이용해 s3에서 데이터를 가져오거나 업로드를 해본 적 있습니다",
                 types: ["company"],
             },
             {
-                content: "PyMySQL 을 이용해 MySQL 를 사용 할 수 있습니다",
+                content: "PyMySQL 을 이용해 MySQL 를 사용 해본 적 있습니다",
                 types: ["company"],
             },
         ]
@@ -202,7 +210,7 @@ export const BACK_END = {
         name: 'Ops',
         contents: [
             {
-                content: "AWS Lightsail, AWS EC2로 배포를 해본적 있습니다",
+                content: "AWS Lightsail, AWS EC2로 배포를 해본 적 있습니다",
                 types: ["personal"],
             },
         ]
@@ -232,7 +240,7 @@ export const PYTHON = {
                 types: ["team"],
             },
             {
-                content: "OpenCV 내장 API 를 이용해 Object Tracking 을 해본적 있습니다",
+                content: "OpenCV 내장 API 를 이용해 Object Tracking 을 해본 적 있습니다",
                 types: ["company"],
             },
         ]
@@ -241,7 +249,7 @@ export const PYTHON = {
         name: 'Object Detection',
         contents: [
             {
-                content: "데이터를 수집해 라벨링 후, Tensorflow 의 MobilenetSSD 오픈소스로 훈련해 Jetson Nano 에서 추론해본적 있습니다",
+                content: "데이터를 수집해 라벨링 후, Tensorflow 의 MobilenetSSD 오픈소스로 훈련해 Jetson Nano 에서 추론해본 적 있습니다",
                 types: ["team"],
             },
             {
@@ -259,19 +267,19 @@ export const OTHERS = {
         name: 'Git',
         contents: [
             {
-                content: "add, commit, push, checkout 등을 사용하여, 커밋규칙, 브랜치 규칙에 따라 개발 할 수 있습니다",
+                content: "add, commit, push, checkout 등을 사용하여, 커밋규칙, 브랜치 규칙에 따라 개발 해본 적 있습니다",
                 types: ["personal", "team", "company"],
             },
             {
-                content: "cherry-pick, filter-branch 를 사용해본적 있습니다",
+                content: "cherry-pick, filter-branch 를 사용해본 적 있습니다",
                 types: ["personal", "company"],
             },
             {
-                content: "Github Pages, Actions 를 사용할 수 있습니다",
+                content: "Github Pages, Actions 를 사용해본 적 있습니다",
                 types: ["personal", "team"],
             },
             {
-                content: "Pull Request 를 보내고, Code Review 를 통과해야 Merge 를 하게 설정해본적 있습니다",
+                content: "Pull Request 를 보내고, Code Review 를 통과해야 Merge 를 하게 설정해본 적 있습니다",
                 types: ["team"],
             },
             {
@@ -284,11 +292,11 @@ export const OTHERS = {
         name: 'Communication',
         contents: [
             {
-                content: "Jira & Confluence 를 이용해 API Document 작성 및 일정 관리를 해본적 있습니다",
+                content: "Jira & Confluence 를 이용해 API Document 작성 및 일정 관리를 해본 적 있습니다",
                 types: ["company"],
             },
             {
-                content: "Slack, Discord, Notion 을 사용할 수 있습니다",
+                content: "Slack, Discord, Notion 을 사용해본 적 있습니다",
                 types: ["personal", "team", "company"],
             },
         ]
@@ -301,10 +309,10 @@ export const ALGORITHM = {
         name: '',
         contents: [
             {
-                content: "알고리즘에서 중요한 것은 기초 알고리즘 활용을 잘해야하는 것이라 믿습니다",
+                content: "얼마나 많은 알고리즘을 아느냐보단 기초 알고리즘 활용을 잘해야하는 것이 중요하다 믿습니다",
             },
             {
-                content: "대회에선 SolvedAC 플래티넘 난이도 이상의 문제를 풀어야 하며, 단순히 알고리즘을 안다고 풀 수 있는 문제가 나오는 경우는 거의 없습니다",
+                content: "대회에선 단순히 알고리즘을 안다고 풀 수 있는 문제가 나오는 경우는 거의 없습니다",
             },
             {
                 content: "새로운 알고리즘을 공부하는 것 역시 좋아해, 아래와 같은 다양한 알고리즘을 문제를 풀어보며 공부했습니다.",
@@ -321,7 +329,7 @@ export const ALGORITHM = {
                 content: "Spanning Tree, Undirected MST(Kruskal, Prim), Dijkstra, Bellman Ford, Floyd Warshall, SPFA",
             },
             {
-                content: "Flow(Ford Fulkerson, Edmonds Karp, Dinic), Bipartite Matching(Hopcroft), MCMF, Min Cut",
+                content: "Flow, Bipartite Matching, MCMF, Min Cut",
             }
         ]
     },

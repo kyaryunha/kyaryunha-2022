@@ -5,11 +5,10 @@ export default function Overview () {
         <OverviewStyledTitle>
             Skills & Experience
         </OverviewStyledTitle>
-        <OverviewText>
-            It is written in detail. <br/>
-            See CV/Project for a summary.<br />
-            Written anything about Algorithm, LaTeX yet. <br />
-        </OverviewText>
+        {/*<OverviewText>*/}
+        {/*    It is written in detail. <br/>*/}
+        {/*    See CV/Project for a summary.<br />*/}
+        {/*</OverviewText>*/}
         <OverviewTag>
             <IconSkill type='personal'/> Used in personal projects <br />
             <IconSkill type='team'/> Used in team projects <br />

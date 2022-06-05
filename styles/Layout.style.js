@@ -5,10 +5,10 @@ export const ErrorMessage = styled.span`
   color: red;
   font-weight: bold;
 `;
-
 export const kyaColor = {
-  yellow: '#FFBB00',
-  gray: '#4A5568',
+  yellow: (props) => `rgba(255, 200, 0, ${props.opacity?props.opacity:1.0})`,
+  gray: (props) => `rgba(50, 60, 70, ${props.opacity?props.opacity:1.0})`,
+  white: (props) => `rgba(255, 255, 255, ${props.opacity?props.opacity:1.0})`,
 };
 
 
@@ -19,7 +19,7 @@ export const StyledHeader = styled.header`
     width: '100%',
   }}
   z-index: 100;
-  background-color: #555;
+  background-color: ${kyaColor.yellow};
   @media print {
     display: none;
   }
@@ -32,6 +32,12 @@ export const StyledHeaderInner = styled.div`
   a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 10px;
+    &:hover {
+      background-color: ${kyaColor.white({opacity: 0.2})};
+    }
   }
   ${MediaQueries[1]} {
     justify-content: space-between;
@@ -42,6 +48,11 @@ export const StyledHeaderInner = styled.div`
     width: 1080px;
     margin: auto;
   }
+`;
+
+export const StyledHeaderTitle = styled.div`
+  font-size: 150%;
+  margin: 0 20px;
 `;
 
 export const StyledMenuItemsNoHamburger = styled.div`
@@ -61,9 +72,13 @@ export const StyledMenuItemsHamburger = styled.div`
 export const StyledHamburger = styled.div`
   display: inline-flex;
   align-items: center;
-  margin: 0 20px;
+  padding: 0 20px;
   svg {
     width: 25px;
+  }
+  border-radius: 5px;
+  &:hover {
+    background-color: ${kyaColor.white({opacity: 0.2})};
   }
 `;
 
@@ -106,4 +121,8 @@ export const StyledMenuItem = styled.div`
     border-top: none;
     padding: 0;
   }
+`;
+
+export const StyledPageBreak = styled.div`
+  page-break-after: auto;
 `;

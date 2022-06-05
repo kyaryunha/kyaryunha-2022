@@ -77,6 +77,10 @@ const App = ({ Component, pageProps }) => {
                 font-display: swap;
                 src: local('Pretendard Variable'), url('/fonts/PretendardVariable.woff2') format('woff2-variations');
               }
+              @page { 
+                  size: A4;
+                  margin: 0.5cm 0.5cm 0.5cm 0.5cm; 
+              } 
 
               body {
                 margin: 0;
