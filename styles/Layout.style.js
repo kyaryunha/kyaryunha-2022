@@ -84,6 +84,7 @@ export const StyledHamburger = styled.div`
   border-radius: 5px;
   &:hover {
     background-color: ${kyaColor.white({ opacity: 0.2 })};
+    cursor: pointer;
   }
 `;
 
