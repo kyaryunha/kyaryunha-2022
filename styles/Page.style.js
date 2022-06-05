@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import {MediaQueries} from "./MediaQueries";
+import styled from '@emotion/styled';
+import { MediaQueries } from './MediaQueries';
 
 export const PageBackgroundStyle = styled.div`
   background-color: white;
@@ -16,7 +16,7 @@ export const PageBackgroundInnerStyle = styled.div`
 
 export const KyaTag = styled.span`
   color: white;
-  background-color: ${props => props.backgroundColor};
+  background-color: ${(props) => (props.backgroundColor ? props.backgroundColor : null)};
   padding: 5px 8px;
   margin: 0 8px 0 0;
   border: none;
@@ -28,7 +28,7 @@ export const KyaTags = styled.div`
 `;
 
 export const KyaA = styled.a`
-  color: ${props => props.color?props.color:'black'};
+  color: ${(props) => (props.color ? props.color : 'black')};
   @media print {
     text-decoration: none;
   }

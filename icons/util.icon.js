@@ -1,17 +1,16 @@
-import styled from "@emotion/styled";
-import {Menu} from "@emotion-icons/boxicons-regular/Menu";
-import {Link} from "@emotion-icons/boxicons-regular/Link";
-import {Buildings} from "@emotion-icons/boxicons-regular/Buildings";
-import {Pencil} from "@emotion-icons/boxicons-regular/Pencil";
-import {PeopleFill} from "@emotion-icons/bootstrap/PeopleFill";
-import { kyaColor } from "../styles/Layout.style";
+import styled from '@emotion/styled';
+import { Menu } from '@emotion-icons/boxicons-regular/Menu';
+import { Link } from '@emotion-icons/boxicons-regular/Link';
+import { Buildings } from '@emotion-icons/boxicons-regular/Buildings';
+import { Pencil } from '@emotion-icons/boxicons-regular/Pencil';
+import { PeopleFill } from '@emotion-icons/bootstrap/PeopleFill';
+
 export const IconHamburger = styled(Menu)`
-    color: white;
+  color: white;
 `;
 
 export const IconLink = styled(Link)`
-    color: kyaColor.yellow;
-    height: 15px;
+  height: 15px;
   @media print {
     display: none;
   }
@@ -39,8 +38,8 @@ export const IconPencil = styled(Pencil)`
   border-radius: 3px;
   margin-left: 3px;
 `;
-export const IconSkill = ({type}) => {
-    if(type==='company') return <IconBuilding />
-    else if(type==='team') return <IconPeopleFill />
-    else if(type==='personal') return <IconPencil />
+export function IconSkill({ type }) {
+  if (type === 'company') return <IconBuilding />;
+  if (type === 'team') return <IconPeopleFill />;
+  if (type === 'personal') return <IconPencil />;
 }

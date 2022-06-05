@@ -1,7 +1,8 @@
-import styled from '@emotion/styled'
-import { kyaColor, KyaTag, KyaTags } from '../styles/Cv.style'
+import styled from '@emotion/styled';
+import { KyaTag, KyaTags } from '../styles/Page.style';
+import { kyaColor } from '../styles/Layout.style';
 
-export default function Introduce () {
+export default function Introduce() {
   return (
     <IntroduceCover>
       <IntroduceText>
@@ -16,11 +17,11 @@ export default function Introduce () {
           ))}
         </KyaTags>
         I'm Computer Software undergraduate student at Hanyang University. <br />
-        {/*Now, I worked as a Backend Engineer at EmoticBox. <br />*/}
+        {/* Now, I worked as a Backend Engineer at EmoticBox. <br /> */}
       </IntroduceText>
       <IntroduceImage src="me.jpg" alt="my picture" />
     </IntroduceCover>
-  )
+  );
 }
 
 const IntroduceCover = styled.div`

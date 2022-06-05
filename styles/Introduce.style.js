@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import {MediaQueries} from "./MediaQueries";
+import styled from '@emotion/styled';
+import { MediaQueries } from './MediaQueries';
 
 export const IntroduceCover = styled.div`
   margin: 0;

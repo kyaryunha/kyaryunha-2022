@@ -1,1 +1,1 @@
-export const WebTitle = 'Shin Hyun'
+export const WEB_TITLE = 'Shin Hyun';

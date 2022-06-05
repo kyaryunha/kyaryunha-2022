@@ -1,9 +1,9 @@
-import {createContext} from "react";
+import { createContext } from 'react';
 
 export const MediaQueriesContext = createContext({
-    dispatch: () => {},
+  dispatch: () => {},
 });
 
 export const MEDIA_QUERIES = {
-    WINDOW_RESIZE: 'WINDOW_RESIZE',
+  WINDOW_RESIZE: 'WINDOW_RESIZE',
 };

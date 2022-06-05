@@ -1,5 +1,8 @@
-import { CVBackground, CVContent, CVList, CVMetas, CVRoleDate, CVSubTitle, CVSubTitleCover, CVTitle } from  "../../styles/Cv.style";
-export default function WorkExperience () {
+import {
+  CVBackground, CVContent, CVList, CVMetas, CVRoleDate, CVSubTitle, CVSubTitleCover, CVTitle,
+} from '../../styles/Cv.style';
+
+export default function WorkExperience() {
   return (
     <CVBackground>
       <CVTitle>
@@ -7,9 +10,9 @@ export default function WorkExperience () {
       </CVTitle>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='EmoticBox'/>
+          <CVSubTitle text="EmoticBox" />
           <CVMetas>
-            <CVRoleDate role='Full Time' date='Jul 19, 2021 - Feb 28, 2022' />
+            <CVRoleDate role="Full Time" date="Jul 19, 2021 - Feb 28, 2022" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -20,10 +23,10 @@ export default function WorkExperience () {
       </CVContent>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Aria-Edge'/>
+          <CVSubTitle text="Aria-Edge" />
           <CVMetas>
-            <CVRoleDate role='Intern' date='Apr 8, 2020 - Jun 12, 2020' />
-            <CVRoleDate role='Contract' date='Jan 19, 2021 - Jun. 18, 2021' />
+            <CVRoleDate role="Intern" date="Apr 8, 2020 - Jun 12, 2020" />
+            <CVRoleDate role="Contract" date="Jan 19, 2021 - Jun. 18, 2021" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -34,9 +37,9 @@ export default function WorkExperience () {
       </CVContent>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Naver Clova'/>
+          <CVSubTitle text="Naver Clova" />
           <CVMetas>
-            <CVRoleDate role='Intern' date='Jun 29, 2020 - Dec 18, 2020' />
+            <CVRoleDate role="Intern" date="Jun 29, 2020 - Dec 18, 2020" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -47,9 +50,9 @@ export default function WorkExperience () {
       </CVContent>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='7meerkat'/>
+          <CVSubTitle text="7meerkat" />
           <CVMetas>
-            <CVRoleDate role='Intern' date='Jan 6, 2020 - Mar 15, 2020'/>
+            <CVRoleDate role="Intern" date="Jan 6, 2020 - Mar 15, 2020" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -60,9 +63,9 @@ export default function WorkExperience () {
       </CVContent>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Software Maestro 10th'/>
+          <CVSubTitle text="Software Maestro 10th" />
           <CVMetas>
-            <CVRoleDate role='Mentee' date='Jun 2019 - Dec 2019'/>
+            <CVRoleDate role="Mentee" date="Jun 2019 - Dec 2019" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -72,5 +75,5 @@ export default function WorkExperience () {
         </CVList>
       </CVContent>
     </CVBackground>
-  )
+  );
 }
