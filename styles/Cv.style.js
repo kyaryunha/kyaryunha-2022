@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import {kyaColor} from "./Layout.style";
-import {KyaTag} from "./Page.style";
-import {MediaQueries} from "./MediaQueries";
+import styled from '@emotion/styled';
+import { kyaColor } from './Layout.style';
+import { KyaTag } from './Page.style';
+import { MediaQueries } from './MediaQueries';
 
 export const CVBackground = styled.div`
 `;
@@ -62,25 +62,25 @@ export const CVRoleDateStyle = styled.div`
     display: inline-block;
   }
 `;
-export const CVSubTitle = ({text}) => {
-    return <CVSubTitleStyle>{text}</CVSubTitleStyle>
+export function CVSubTitle({ text }) {
+  return <CVSubTitleStyle>{text}</CVSubTitleStyle>;
 }
 
-export const CVDate = ({date}) => {
-    return <CVDateStyle>{date}</CVDateStyle>
-};
+export function CVDate({ date }) {
+  return <CVDateStyle>{date}</CVDateStyle>;
+}
 
-export const CVRole = ({role}) => {
-    return <KyaTag backgroundColor={kyaColor.gray}>{role}</KyaTag>
-};
+export function CVRole({ role }) {
+  return <KyaTag backgroundColor={kyaColor.gray}>{role}</KyaTag>;
+}
 
-export const CVRoleDate = ({date, role}) => {
-    return (
-        <CVRoleDateStyle>
-            {role && <CVRole role={role} />}
-            {date && <CVDate date={date} />}
-        </CVRoleDateStyle>
-    )
-};
+export function CVRoleDate({ date, role }) {
+  return (
+    <CVRoleDateStyle>
+      {role && <CVRole role={role} />}
+      {date && <CVDate date={date} />}
+    </CVRoleDateStyle>
+  );
+}
 
 export const CVMetas = styled.div``;

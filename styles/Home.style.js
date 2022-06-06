@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import {Canvas} from '@react-three/fiber';
-import {MediaQueries} from "./MediaQueries";
+import { Canvas } from '@react-three/fiber';
+import { MediaQueries } from './MediaQueries';
 
 export const StyledMainBackground = styled.div`
   position: relative;
@@ -10,7 +10,6 @@ export const StyledMainBackground = styled.div`
   height: 100vh;
   background: linear-gradient(to bottom right, #FFA500, #FFE211);
 `;
-
 
 export const StyledMainCanvas = styled(Canvas)`
   position: absolute;

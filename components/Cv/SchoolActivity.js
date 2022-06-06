@@ -1,5 +1,8 @@
-import { CVBackground, CVContent, CVDate, CVList, CVMetas, CVRoleDate, CVSubTitle, CVSubTitleCover, CVTitle } from  "../../styles/Cv.style";
-export default function SchoolActivity () {
+import {
+  CVBackground, CVContent, CVDate, CVList, CVMetas, CVSubTitle, CVSubTitleCover, CVTitle,
+} from '../../styles/Cv.style';
+
+export default function SchoolActivity() {
   return (
     <CVBackground>
       <CVTitle>
@@ -7,9 +10,9 @@ export default function SchoolActivity () {
       </CVTitle>
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Hanyang University'/>
+          <CVSubTitle text="Hanyang University" />
           <CVMetas>
-            <CVDate date='Mar. 2019 - PRESENT' />
+            <CVDate date="Mar. 2019 - PRESENT" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -24,9 +27,9 @@ export default function SchoolActivity () {
 
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Chungbuk Science High School'/>
+          <CVSubTitle text="Chungbuk Science High School" />
           <CVMetas>
-            <CVDate date='2016 - 2018' />
+            <CVDate date="2016 - 2018" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
@@ -38,15 +41,15 @@ export default function SchoolActivity () {
 
       <CVContent>
         <CVSubTitleCover>
-          <CVSubTitle text='Barami'/>
+          <CVSubTitle text="Barami" />
           <CVMetas>
-            <CVDate date='Mar. 2019 - PRESENT' />
+            <CVDate date="Mar. 2019 - PRESENT" />
           </CVMetas>
         </CVSubTitleCover>
         <CVList>
-          {/*<li>*/}
-          {/*  An academic club in Hanyang Univ’s College of Engineering*/}
-          {/*</li>*/}
+          {/* <li> */}
+          {/*  An academic club in Hanyang Univ’s College of Engineering */}
+          {/* </li> */}
           <li>
             Holds a work exhibition every November
           </li>
@@ -59,5 +62,5 @@ export default function SchoolActivity () {
         </CVList>
       </CVContent>
     </CVBackground>
-  )
+  );
 }

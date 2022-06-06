@@ -1,14 +1,16 @@
 import Head from 'next/head';
-import Header from "./Header";
-import {WebTitle} from "../CONSTANTS";
+import Header from './Header';
+import { WEB_TITLE } from '../CONSTANTS';
 
-const Layout = ({ headerInterval, children, subtitle }) => (
+function Layout({ headerInterval, children, subtitle }) {
+  return (
     <>
-        <Head>
-            <title>{subtitle?`${WebTitle} - ${subtitle}`:WebTitle}</title>
-        </Head>
-        <Header headerInterval={headerInterval}/>
-        {children}
+      <Head>
+        <title>{subtitle ? `${WEB_TITLE} - ${subtitle}` : WEB_TITLE}</title>
+      </Head>
+      <Header headerInterval={headerInterval} />
+      {children}
     </>
-);
+  );
+}
 export default Layout;

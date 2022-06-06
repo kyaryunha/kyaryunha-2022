@@ -1,20 +1,25 @@
 import styled from '@emotion/styled';
-import {MediaQueries} from "./MediaQueries";
+import { MediaQueries } from './MediaQueries';
 
 export const ErrorMessage = styled.span`
   color: red;
   font-weight: bold;
 `;
-export const kyaColor = {
-  yellow: ({opacity}) => `rgba(255, 200, 0, ${opacity?opacity:1.0})`,
-  gray: ({opacity}) => `rgba(50, 60, 70, ${opacity?opacity:1.0})`,
-  white: ({opacity}) => `rgba(255, 255, 255, ${opacity?opacity:1.0})`,
+
+const KyaColor = () => {
+  const yellow = (props) => `rgba(255, 200, 0, ${props.opacity || 1.0})`;
+  const gray = (props) => `rgba(50, 60, 70, ${props.opacity || 1.0})`;
+  const white = (props) => `rgba(255, 255, 255, ${props.opacity || 1.0})`;
+  return Object.freeze({
+    yellow, gray, white,
+  });
 };
 
+export const kyaColor = KyaColor();
 
 export const StyledHeader = styled.header`
   //background-color: rgba(255, 255, 255, 0.1);
-  ${props => props.headerInterval && {
+  ${(props) => props.headerInterval && {
     position: 'absolute',
     width: '100%',
   }}
@@ -36,7 +41,7 @@ export const StyledHeaderInner = styled.div`
     border-radius: 5px;
     margin: 10px 10px;
     &:hover {
-      background-color: ${kyaColor.white({opacity: 0.2})};
+      background-color: ${kyaColor.white({ opacity: 0.2 })};
     }
   }
   ${MediaQueries[1]} {
@@ -78,7 +83,8 @@ export const StyledHamburger = styled.div`
   }
   border-radius: 5px;
   &:hover {
-    background-color: ${kyaColor.white({opacity: 0.2})};
+    background-color: ${kyaColor.white({ opacity: 0.2 })};
+    cursor: pointer;
   }
 `;
 
