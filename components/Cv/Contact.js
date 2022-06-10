@@ -20,13 +20,13 @@ export default function Contact() {
             Email - kyaryunha@naver.com
           </li>
           <li>
-            CV (2022.02) - <KyaA href="https://hanyang-univ.s3.ap-northeast-2.amazonaws.com/Shin_Hyun_CV_2022_02.pdf" color={kyaColor.yellow} target="_blank">CV<IconLink /></KyaA>
+            CV (2022.02) - <KyaA href="https://hanyang-univ.s3.ap-northeast-2.amazonaws.com/Shin_Hyun_CV_2022_02.pdf" color={kyaColor.yellow()} target="_blank">CV<IconLink /></KyaA>
           </li>
           <li>
-            Github - <KyaA href="http://github.com/kyaryunha" color={kyaColor.yellow} target="_blank">kyaryunha<IconLink /></KyaA>
+            Github - <KyaA href="http://github.com/kyaryunha" color={kyaColor.yellow()} target="_blank">kyaryunha<IconLink /></KyaA>
           </li>
           <li>
-            Solved.ac (Algorithm) - <KyaA href="https://solved.ac/profile/kyaryunha_cpp" color={kyaColor.yellow} target="_blank">kyaryunha_cpp<IconLink /> </KyaA>
+            Solved.ac (Algorithm) - <KyaA href="https://solved.ac/profile/kyaryunha_cpp" color={kyaColor.yellow()} target="_blank">kyaryunha_cpp<IconLink /> </KyaA>
           </li>
         </CVList>
       </CVContent>

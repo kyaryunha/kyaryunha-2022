@@ -27,7 +27,7 @@ export default function Introduce() {
         </IntroduceTitle>
         <KyaTags>
           {['Algorithm', 'FrontEnd', 'BackEnd'].map((name) => (
-            <KyaTag backgroundColor={kyaColor.yellow} key={name}>
+            <KyaTag backgroundColor={kyaColor.yellow()} key={name}>
               {name}
             </KyaTag>
           ))}

@@ -30,7 +30,7 @@ export default function Presentation() {
             Participated in The Korean TeX Society’s 2019 group study
           </li>
           <li>
-            <KyaA href="http://wiki.ktug.org/wiki/wiki.php/LaTeXWorkshop/2019" color={kyaColor.yellow} target="_blank">
+            <KyaA href="http://wiki.ktug.org/wiki/wiki.php/LaTeXWorkshop/2019" color={kyaColor.yellow()} target="_blank">
               http://wiki.ktug.org/wiki/wiki.php/LaTeXWorkshop/2019 <IconLink />
             </KyaA>
           </li>
