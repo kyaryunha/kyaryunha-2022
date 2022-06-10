@@ -7,9 +7,9 @@ export const ErrorMessage = styled.span`
 `;
 
 const KyaColor = () => {
-  const yellow = (props) => `rgba(255, 200, 0, ${props.opacity || 1.0})`;
-  const gray = (props) => `rgba(50, 60, 70, ${props.opacity || 1.0})`;
-  const white = (props) => `rgba(255, 255, 255, ${props.opacity || 1.0})`;
+  const yellow = (props) => `rgba(255, 200, 0, ${props ? props.opacity : 1.0})`;
+  const gray = (props) => `rgba(50, 60, 70, ${props ? props.opacity : 1.0})`;
+  const white = (props) => `rgba(255, 255, 255, ${props ? props.opacity : 1.0})`;
   return Object.freeze({
     yellow, gray, white,
   });
@@ -24,7 +24,7 @@ export const StyledHeader = styled.header`
     width: '100%',
   }}
   z-index: 100;
-  background-color: ${kyaColor.yellow};
+  background-color: ${kyaColor.yellow()};
   @media print {
     display: none;
   }

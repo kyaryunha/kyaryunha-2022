@@ -59,8 +59,8 @@ function Menu() {
             }
       </StyledMenuItemsNoHamburger>
       <StyledMenuItemsHamburger>
-        <StyledHamburger>
-          <IconHamburger onClick={onClickHamburger} />
+        <StyledHamburger onClick={onClickHamburger}>
+          <IconHamburger />
         </StyledHamburger>
         {
                 menuOpen && (
