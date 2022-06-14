@@ -39,5 +39,6 @@ module.exports = {
     'jsx-a11y/aria-role': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'import/prefer-default-export': 0,
+    'linebreak-style': 0,
   },
 };
