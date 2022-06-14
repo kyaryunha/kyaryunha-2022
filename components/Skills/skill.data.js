@@ -4,7 +4,7 @@ export const FRONT_END = {
     name: '',
     contents: [
       {
-        content: '프론트엔드는 상상한 것을 구체화하여 구현합니다.',
+        content: '체계적인 프론트엔드를 원합니다.',
       },
     ],
   },
