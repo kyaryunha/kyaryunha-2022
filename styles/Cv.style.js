@@ -71,7 +71,7 @@ export function CVDate({ date }) {
 }
 
 export function CVRole({ role }) {
-  return <KyaTag backgroundColor={kyaColor.gray}>{role}</KyaTag>;
+  return <KyaTag backgroundColor={kyaColor.gray(0)}>{role}</KyaTag>;
 }
 
 export function CVRoleDate({ date, role }) {
