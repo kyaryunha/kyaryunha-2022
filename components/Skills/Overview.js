@@ -1,6 +1,6 @@
 import {
   OverviewCover, OverviewStyledTitle, OverviewTag,
-} from '../../styles/Skills.style';
+} from '../../styles/Overview.style';
 import { IconSkill } from '../../icons/util.icon';
 
 export default function Overview() {

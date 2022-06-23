@@ -378,7 +378,7 @@
     "@babel/runtime" "^7.14.8"
     "@emotion-icons/emotion-icon" "4.1.0"
 
-"@emotion-icons/icomoon@3.14.0":
+"@emotion-icons/icomoon@3.14.0", "@emotion-icons/icomoon@^3.14.0":
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/icomoon/-/icomoon-3.14.0.tgz#d30b85824272b21fec690487fc4253b900ea77bf"
   integrity sha512-ICw9hST/uRRL8sA2ThDVlEpP5jVXpfHXkDbG46ZsVr6JXQXIeb05OKJJO29/QwboJt36Qi6KEF3DZRQGQdBbIA==
@@ -482,7 +482,7 @@
     "@babel/runtime" "^7.14.0"
     "@emotion-icons/emotion-icon" "4.1.0"
 
-"@emotion-icons/simple-icons@3.27.0":
+"@emotion-icons/simple-icons@3.27.0", "@emotion-icons/simple-icons@^3.27.0":
   version "3.27.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/simple-icons/-/simple-icons-3.27.0.tgz#182fb1c0c870095676ec11825753efb3d71ff642"
   integrity sha512-DAp2Hq6EQDFTQ1n80PAIhnREQlJ1j5MbJoYneDPKhzl9ItWrUVHPvqBuIAE2qQ0PtaVJAcw1COOxeE/xuxZFyw==

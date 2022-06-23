@@ -4,11 +4,11 @@ export default function Overview() {
   return (
     <OverviewCover>
       <OverviewStyledTitle>
-        Projects
+        Mighty Card Counter
       </OverviewStyledTitle>
       <OverviewText>
-        Company projects are not listed. <br />
-        Only personal/team projects are listed.
+        This is Mighty Card Counter beta version. <br />
+        If you have any requests, please leave an issue or pull request on github.
       </OverviewText>
     </OverviewCover>
   );

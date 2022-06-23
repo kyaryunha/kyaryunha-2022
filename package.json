@@ -11,6 +11,8 @@
     "@emotion-icons/bootstrap": "^3.27.0",
     "@emotion-icons/boxicons-regular": "^3.19.0",
     "@emotion-icons/fa-brands": "^3.19.0",
+    "@emotion-icons/icomoon": "^3.14.0",
+    "@emotion-icons/simple-icons": "^3.27.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@react-three/fiber": "^8.0.13",
