@@ -14,6 +14,11 @@ yarn build
 yarn start
 ```
 
+#### TODO
+
+js -> ts / context -> mobx 로 전체적으로 변경하는거 마저 할거임... 언젠가...
+
+
 #### History of my site
 I update the site frequently...
 

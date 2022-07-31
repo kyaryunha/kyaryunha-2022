@@ -1,4 +1,5 @@
 {
+  "name": "kyaryunha-2022",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,11 +12,15 @@
     "@emotion-icons/bootstrap": "^3.27.0",
     "@emotion-icons/boxicons-regular": "^3.19.0",
     "@emotion-icons/fa-brands": "^3.19.0",
+    "@emotion-icons/icomoon": "^3.14.0",
+    "@emotion-icons/simple-icons": "^3.27.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@react-three/fiber": "^8.0.13",
     "emotion-icons": "^3.27.0",
-    "next": "latest",
+    "mobx": "^6.6.1",
+    "mobx-react": "^7.5.2",
+    "next": "12.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "three": "^0.140.0"
@@ -24,13 +29,18 @@
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
     "@emotion/babel-plugin": "^11.9.2",
+    "@types/node": "^18.6.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.2.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "typescript": "^4.7.4"
   }
 }

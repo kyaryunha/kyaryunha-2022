@@ -6,6 +6,13 @@ export default function ProjectList() {
     <StyledProjectList>
       <ProjectListItem
         date="2022"
+        title="Mighty Card Counter(beta)"
+        coverImageUrl="/projects/mighty-card-counter.png"
+        contents="react toy project, I made this because I am a goldfish"
+        url="/mighty"
+      />
+      <ProjectListItem
+        date="2022"
         title="This Site"
         coverImageUrl="/projects/thissite.png"
         contents="Stack: React, Next.js, Context, Emotion, Vercel"

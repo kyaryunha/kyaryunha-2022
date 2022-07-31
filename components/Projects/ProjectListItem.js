@@ -28,7 +28,7 @@ export default function ProjectListItem({
                   : title
             }
       </StyledProjectListItemTitle>
-      <StyledProjectImage src={coverImageUrl} alt="my picture" />
+      { coverImageUrl && <StyledProjectImage src={coverImageUrl} alt="my picture" />}
       <StyledProjectListItemContents>
         {contents}
       </StyledProjectListItemContents>
