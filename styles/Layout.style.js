@@ -18,13 +18,12 @@ const KyaColor = () => {
 export const kyaColor = KyaColor();
 
 export const StyledHeader = styled.header`
-  //background-color: rgba(255, 255, 255, 0.1);
   ${(props) => props.headerInterval && {
     position: 'absolute',
     width: '100%',
   }}
   z-index: 100;
-  background-color: ${kyaColor.yellow()};
+  background-color: ${kyaColor.yellow({ opacity: 1.0 })};
   @media print {
     display: none;
   }
