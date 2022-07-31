@@ -17,13 +17,15 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@react-three/fiber": "^8.0.13",
+    "@types/uuid": "^8.3.4",
     "emotion-icons": "^3.27.0",
     "mobx": "^6.6.1",
     "mobx-react": "^7.5.2",
     "next": "12.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "three": "^0.140.0"
+    "three": "^0.140.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
