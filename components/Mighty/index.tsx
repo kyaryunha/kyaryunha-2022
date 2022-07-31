@@ -5,6 +5,7 @@ import CardBoardController from "./card-board-controller";
 import GirudaCounter from "./giruda-counter";
 import {StyledButton} from "../../styles/mighty.style";
 import {useStores} from "../../stores";
+import MightyLogs from "./mighty-logs";
 
 const Mighty = () => {
   const {girudaStore, mightyStore} = useStores();
@@ -21,6 +22,7 @@ const Mighty = () => {
           <CardBoardController />
           <GirudaCounter />
           <CardsAll />
+          <MightyLogs />
       </PageBackgroundInnerStyle>
     </PageBackgroundStyle>
   );
