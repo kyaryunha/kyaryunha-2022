@@ -15,7 +15,6 @@ export class MightyStore {
             value = this.joker;
         }
         else {
-            // @ts-ignore
             this.normalCards[typeToIdx(type)][priority] = !this.normalCards[typeToIdx(type)][priority];
             value = this.normalCards[typeToIdx(type)][priority];
         }
@@ -23,6 +22,16 @@ export class MightyStore {
             op: CardOp.Card,
             content: 'update '+type+' '+priority+' '+value,
         })
+    }
+
+    @action
+    public rollback = (type:CardType, priority:number, value:boolean) => {
+        if (type === CardType.JOKER) {
+            this.joker = !value;
+        }
+        else {
+            this.normalCards[typeToIdx(type)][priority] = !value;
+        }
     }
     @action
     public init = () => {

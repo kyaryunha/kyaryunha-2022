@@ -1,6 +1,7 @@
 import {useStores} from "../../stores";
 import {observer} from "mobx-react";
 import {logProp} from "../../stores/card-log.store";
+import {StyledButton} from "../../styles/mighty.style";
 
 const GirudaCounter = observer(() => {
     const {cardLogStore} = useStores();
@@ -9,7 +10,13 @@ const GirudaCounter = observer(() => {
             <br />
             Logs: (If you click on something it will be logged here) <br />
             {
-                cardLogStore.logs.map((log:logProp) => <>- {log.op} {log.content} <br/> </>).reverse()
+                cardLogStore.logs.map((log:logProp, idx) =>
+                    <div key={log.id}>
+                        - {log.op} {log.content}
+                        {log.content !== 'init' && <StyledButton padding="2px" margin="2px" onClick={() => cardLogStore.rollback(idx)}>rollback</StyledButton>}
+                        <br/>
+                    </div>
+                ).reverse()
             }
         </>
     );

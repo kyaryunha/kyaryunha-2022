@@ -12,13 +12,15 @@ export const StyledInformation = styled.span`
 `;
 
 type StyledButtonProps = {
-  width?: string
+  width?: string,
+  padding?: string,
+  margin?: string,
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
   ${(props) => (props.width && `width: ${props.width};`)}
-  padding: 8px;
-  margin: 10px 10px;
+  padding: ${(props) => (props.padding ? props.padding : '8px')};
+  margin: ${(props) => (props.margin ? props.margin : '10px')};
   user-select: none;
   &:hover {
     cursor: pointer;

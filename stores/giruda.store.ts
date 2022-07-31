@@ -8,11 +8,17 @@ export class GirudaStore {
     @observable giruda:number = 13;
     @action
     public girudaCheck = (num:number) => {
-        this.giruda = Math.max(0, this.giruda-num);
+        const giruda = Math.max(0, this.giruda-num);
+        const possibleNum = this.giruda-giruda;
+        this.giruda = giruda;
         rootStore.cardLogStore.push({
             op: CardOp.Giruda,
-            content: 'girudaCheck '+num.toString(),
+            content: 'girudaCheck '+possibleNum,
         })
+    }
+
+    public rollback = (num:number) => {
+        this.giruda += num;
     }
     @action
     public init = () => {
