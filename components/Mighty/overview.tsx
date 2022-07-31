@@ -1,6 +1,6 @@
 import { OverviewCover, OverviewStyledTitle, OverviewText } from '../../styles/Overview.style';
 
-export default function Overview() {
+const Overview = () => {
   return (
     <OverviewCover>
       <OverviewStyledTitle>
@@ -13,3 +13,4 @@ export default function Overview() {
     </OverviewCover>
   );
 }
+export default Overview;

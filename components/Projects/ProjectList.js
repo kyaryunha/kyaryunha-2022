@@ -6,9 +6,9 @@ export default function ProjectList() {
     <StyledProjectList>
       <ProjectListItem
         date="2022"
-        title="Mighty Card Counter(beta, 2022.06.24~)"
-        coverImageUrl=""
-        contents="simple project, but I made this because I am a goldfish"
+        title="Mighty Card Counter(beta)"
+        coverImageUrl="/projects/mighty-card-counter.png"
+        contents="react toy project, I made this because I am a goldfish"
         url="/mighty"
       />
       <ProjectListItem
