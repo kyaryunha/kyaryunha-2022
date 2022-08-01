@@ -17,6 +17,7 @@ export type logProp = {
     id: string,
     op: CardOp,
     content: string,
+    createdAt: Date,
 }
 
 export class CardLogStore {
@@ -27,6 +28,7 @@ export class CardLogStore {
         if (log.op === CardOp.Giruda && log.content === 'init') this.logs = [];
         this.logs.push({
             id: uuidv4(),
+            createdAt: new Date(),
             ...log,
         });
     }

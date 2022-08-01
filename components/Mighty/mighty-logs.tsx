@@ -12,7 +12,7 @@ const GirudaCounter = observer(() => {
             {
                 cardLogStore.logs.map((log:logProp, idx) =>
                     <div key={log.id}>
-                        - {log.op} {log.content}
+                        {log.createdAt.toString().slice(15, 24)} - {log.op} {log.content}
                         {log.content !== 'init' && <StyledButton padding="2px" margin="2px" onClick={() => cardLogStore.rollback(idx)}>rollback</StyledButton>}
                         <br/>
                     </div>
